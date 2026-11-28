@@ -7,3 +7,8 @@ if(typeof Github !== "undefined"){
 }
 // jQuery Library
 document.write('<script src=https:"//code.jquery.com/jquery-4.0.0.js"></script>');
+// Developer
+var el = document.createElement("script");
+el.src="https://cdnjs.cloudflare.com/ajax/libs/eruda/3.4.3/eruda.js";
+el.onload = () => eruda.init();
+document.head.appendChild(el);
